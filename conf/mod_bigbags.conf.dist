@@ -1,0 +1,38 @@
+[worldserver]
+
+########################################
+# mod-bigbags configuration
+#
+# Fills the four bag slots of every character with a large bag, once per
+# character. Requires "EnablePlayerSettings = 1" in worldserver.conf so the
+# grant can be remembered (otherwise the module disables itself).
+#
+# New characters already receive their bags from playercreateinfo_item; this
+# module covers characters (and bots) that were created earlier.
+########################################
+#
+#    BigBags.Enable
+#        Description: Hand out bags on login.
+#        Default:     1 - (Enabled)
+#                     0 - (Disabled)
+
+BigBags.Enable = 1
+
+#
+#    BigBags.BagEntry
+#        Description: item_template entry of the bag to grant. Must be a
+#                     general purpose container. 23162 holds 36 slots, the
+#                     largest in 3.3.5a, and cannot be sold (sell price 0).
+#                     Smaller alternatives: 51809 (24 slots, Portable Hole),
+#                     38082 (22 slots, "Gigantique" Bag).
+#        Default:     23162
+
+BigBags.BagEntry = 23162
+
+#
+#    BigBags.Announce / BigBags.AnnounceText
+#        Description: Whisper a note to the character when bags are granted.
+#        Default:     1 - (Enabled)
+
+BigBags.Announce = 1
+BigBags.AnnounceText = "Your bag slots have been filled with large bags."
