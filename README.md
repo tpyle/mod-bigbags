@@ -11,3 +11,8 @@ not managing sixteen slots.
 | `BigBags.BagEntry` | the item to hand out (one per bag slot) |
 | `BigBags.Announce` | tell the player at login |
 | `BigBags.AnnounceText` | what to tell them |
+
+## Licence
+
+GNU Affero General Public License v3.0, the licence AzerothCore and its
+modules use. See [LICENSE](LICENSE).
